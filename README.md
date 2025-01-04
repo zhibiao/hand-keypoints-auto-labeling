@@ -1,5 +1,5 @@
 
-# Collecting key points and gestures of hands based on mediapipe for YOLO training.
+# Collecting key points and gestures based on `Mediapipe` for `YOLO Pose` training.
 # 1.Start Up
 
 ```shell
