@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Auto Labeling</title>
+  <style>
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+    }
+
+    #localCanvas {
+      border: 1px solid #fff;
+    }
+
+    #gestureCategory{
+      width: 120px;
+      height: 30px;
+      text-align: center;
+    }
+
+    #btnSave {
+      width: 120px;
+      height: 30px;
+    }
+  </style>
+</head>
+
+<body>
+  <canvas id="localCanvas"></canvas>
+
+  <select id="gestureCategory">
+    <option>None</option>
+    <option>Fist</option>
+    <option>Palm</option>
+    <option>Pinch</option>
+    <option>Thumb</option>
+  </select>
+
+  <button id="btnSave">Save</button>
+
+  <script src="@mediapipe/tasks-vision/drawing_utils.js"></script>
+  <script src="@mediapipe/tasks-vision/hands.js"></script>
+  <script src="renderer.js" type="module"></script>
+
+</body>
+
+</html>

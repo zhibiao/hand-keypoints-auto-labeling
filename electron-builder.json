@@ -1,0 +1,23 @@
+{
+    "appId": "hand-keypoints-auto-labeling",
+    "productName": "Auto Labeling",
+    "directories": {
+        "app": ".",
+        "output": "build"
+    },
+    "asar": true,
+    "win": {
+        "target": [
+            {
+                "target": "nsis",
+                "arch": [
+                    "x64"
+                ]
+            }
+        ],
+        "icon": "AI.png"
+    },
+    "electronDownload": {
+        "mirror": "https://npmmirror.com/mirrors/electron/"
+    }
+}
